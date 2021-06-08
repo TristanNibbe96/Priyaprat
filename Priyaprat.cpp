@@ -2,9 +2,15 @@
 //
 
 #include <iostream>
+#include <string>
 
 int GetEnteredOption() {
+    std::string rawNumber = "";
     int number{};
+
+
+
+    number = std::stoi(rawNumber, NULL, 10);
 
     return number;
 }
