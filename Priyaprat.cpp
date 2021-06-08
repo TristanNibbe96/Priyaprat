@@ -4,7 +4,9 @@
 #include <iostream>
 
 int GetEnteredOption() {
+    int number{};
 
+    return number;
 }
 
 int main()
