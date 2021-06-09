@@ -10,7 +10,7 @@ int GetEnteredOption() {
 
     while (rawNumber.length() != 1 || isdigit(rawNumber[0])) {
         std::cout << "\nPlease enter a valid option: ";
-        std::cin >> rawNumber;
+        std::getline(std::cin, rawNumber);
     }
 
     number = std::stoi(rawNumber, NULL, 10);
