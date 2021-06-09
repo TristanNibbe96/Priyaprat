@@ -8,7 +8,7 @@ int GetEnteredOption() {
     std::string rawNumber = "";
     int number{};
 
-    while (rawNumber.length() != 1 || isdigit(rawNumber[0])) {
+    while (rawNumber.length() != 1 || !isdigit(rawNumber[0])) {
         std::cout << "\nPlease enter a valid option: ";
         std::getline(std::cin, rawNumber);
     }
