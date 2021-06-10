@@ -1,5 +1,3 @@
-// Priyaprat.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 #include <string>
@@ -22,8 +20,14 @@ void PrintWelcomeMessage() {
     std::cout << "Welcome to Priyaprat, survive if you can!";
 }
 
+void PrintOptions() {
+    std::cout << "1)Start Game\n";
+}
+
 int main()
 {
+    PrintWelcomeMessage();
+    PrintOptions();
     GetEnteredOption();
 }
 
