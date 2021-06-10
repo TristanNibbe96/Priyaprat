@@ -18,9 +18,13 @@ int GetEnteredOption() {
     return number;
 }
 
+void PrintWelcomeMessage() {
+    std::cout << "Welcome to Priyaprat, survive if you can!";
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    GetEnteredOption();
 }
 
 
