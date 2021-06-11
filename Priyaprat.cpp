@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "MainMenu.cpp"
 
 void PrintOptions() {
     std::cout << "1) Start Game\n";
@@ -10,6 +11,8 @@ void PrintOptions() {
 int main()
 {
     PrintOptions();
+
+    MainMenu mainMenu{};
 }
 
 
