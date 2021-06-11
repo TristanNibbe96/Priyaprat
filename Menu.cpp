@@ -2,6 +2,7 @@
 #include <string>
 
 class Menu{
+public:
     int GetEnteredOption() {
         std::string rawNumber = "";
         int number{};
@@ -12,7 +13,6 @@ class Menu{
         }
 
         number = std::stoi(rawNumber, NULL, 10);
-
         return number;
     }
 
