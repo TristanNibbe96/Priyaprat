@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-class {
+class Menu{
     int GetEnteredOption() {
         std::string rawNumber = "";
         int number{};
