@@ -4,12 +4,11 @@
 
 class Menu{
 protected:
-    std::vector<std::string> options;
+    std::string options;
 
 public:
     Menu(std::string[] options, int len) {
         for (int i = 0; i < len; i++) {
-            this->options.ad
         }
     }
 
