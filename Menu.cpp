@@ -2,7 +2,14 @@
 #include <string>
 
 class Menu{
+protected:
+    std::string options[];
+
 public:
+    Menu(std::string options) {
+        this->options = new std::string{"jj"};
+    }
+
     int GetEnteredOption() {
         std::string rawNumber = "";
         int number{};
@@ -16,7 +23,6 @@ public:
         return number;
     }
 
-protected:
-    enum options;
+
 
 };

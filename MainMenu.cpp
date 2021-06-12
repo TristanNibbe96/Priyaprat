@@ -5,7 +5,6 @@
 class MainMenu : public Menu{
 
 	MainMenu() {
-		this.options;
 	}
 
 	void PrintWelcomeMessage() {
