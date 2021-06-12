@@ -1,13 +1,26 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 class Menu{
 protected:
-    std::string options[];
+    std::vector<std::string> options;
 
 public:
-    Menu(std::string options) {
-        this->options = new std::string{"jj"};
+    Menu(std::string[] options, int len) {
+        for (int i = 0; i < len; i++) {
+            this->options.ad
+        }
+    }
+
+    void ArrayCopy() {
+        options = new std::string[10];
+    }
+
+    void PrintOptions() {
+        std::cout << "1) Start Game\n";
+        std::cout << "2) Options\n";
+        std::cout << "3) Quit\n";
     }
 
     int GetEnteredOption() {

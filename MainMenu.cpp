@@ -5,6 +5,7 @@
 class MainMenu : public Menu{
 
 	MainMenu() {
+
 	}
 
 	void PrintWelcomeMessage() {
