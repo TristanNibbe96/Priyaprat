@@ -12,10 +12,6 @@ public:
         }
     }
 
-    void ArrayCopy() {
-        options = new std::string[10];
-    }
-
     void PrintOptions() {
         std::cout << "1) Start Game\n";
         std::cout << "2) Options\n";
