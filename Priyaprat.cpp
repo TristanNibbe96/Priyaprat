@@ -10,8 +10,6 @@ void PrintOptions() {
 
 int main()
 {
-    PrintOptions();
-
     MainMenu mainMenu{};
     mainMenu.GetEnteredOption();
 }

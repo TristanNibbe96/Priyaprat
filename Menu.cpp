@@ -16,4 +16,7 @@ public:
         return number;
     }
 
+protected:
+    enum options;
+
 };
