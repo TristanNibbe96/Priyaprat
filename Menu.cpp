@@ -4,18 +4,19 @@
 
 class Menu{
 protected:
-    std::string options;
+    std::string options[];
+    int numOptions{};
 
 public:
-    Menu(std::string[] options, int len) {
-        for (int i = 0; i < len; i++) {
-        }
+    Menu(std::string options[], int len) {
+        this->options[1] = options[1];
+        numOptions = len;
     }
 
     void PrintOptions() {
-        std::cout << "1) Start Game\n";
-        std::cout << "2) Options\n";
-        std::cout << "3) Quit\n";
+        for (int i = 0; i < numOptions; i++) {
+            std::cout << i + options[i] + "\n";
+        }
     }
 
     int GetEnteredOption() {
