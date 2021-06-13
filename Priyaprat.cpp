@@ -4,8 +4,8 @@
 
 int main()
 {
-    MainMenu mainMenu{};
-    mainMenu.GetEnteredOption();
+    MainMenu mainMenu;
+    mainMenu.PrintWelcomeMessage();
 }
 
 
