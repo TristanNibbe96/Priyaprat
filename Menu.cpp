@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
-#include <vector>
 
 class Menu{
 protected:
-    std::string options[];
+    std::string options[9] = {};
     int numOptions{};
 
 public:
@@ -15,7 +14,7 @@ public:
 
     void PrintOptions() {
         for (int i = 0; i < numOptions; i++) {
-            std::cout << i + options[i] + "\n";
+            std::cout << std::stoi(i,NULL,10) + options[i] + "\n";
         }
     }
 
