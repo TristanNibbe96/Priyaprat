@@ -21,6 +21,7 @@ public:
     int GetEnteredOption() {
         std::string rawNumber = "";
         int number{};
+        std::getline(std::cin, rawNumber);
 
         while (rawNumber.length() != 1 || !isdigit(rawNumber[0])) {
             std::cout << "\nPlease enter a valid option: ";

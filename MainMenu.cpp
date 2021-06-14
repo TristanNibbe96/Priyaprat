@@ -11,7 +11,7 @@ public:
 	}
 
 	void PrintWelcomeMessage() {
-		std::cout << "Welcome to Priyaprat, survive if you can!" << std::endl;
+		std::cout << "Welcome to Priyaprat, survive if you can!\n";
 		PrintOptions();
 		GetEnteredOption();
 	}
