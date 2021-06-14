@@ -3,7 +3,7 @@
 
 class Menu{
 protected:
-    std::string options[9] = {};
+    std::string options[4] = {"","","",""};
     int numOptions{};
 
 public:
