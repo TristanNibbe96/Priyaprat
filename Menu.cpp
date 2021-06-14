@@ -8,7 +8,9 @@ protected:
 
 public:
     Menu(std::string options[], int len) {
-        this->options[1] = options[1];
+        for (int i = 0; i < len; i++) {
+            this->options[i] = options[i];
+        }
         numOptions = len;
     }
 
@@ -16,6 +18,8 @@ public:
         for (int i = 0; i < numOptions; i++) {
             std::cout << i << options[i] + "\n";
         }
+
+        std::cout << std::endl;
     }
 
     int GetEnteredOption() {
