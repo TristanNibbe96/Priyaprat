@@ -16,7 +16,7 @@ public:
 
     void PrintOptions() {
         for (int i = 0; i < numOptions; i++) {
-            std::cout << i << options[i] + "\n";
+            std::cout << i << ") " + options[i] + "\n";
         }
 
         std::cout << std::endl;
