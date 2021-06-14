@@ -3,9 +3,9 @@
 #include "Menu.cpp"
 
 class MainMenu : public Menu{
-	std::string mainOptions[] = {"Start Game","Options","Quit"};
+	std::string mainOptions[3] = {"Start Game","Options","Quit"};
 
-	MainMenu() : Menu(options,2) {
+	MainMenu() : Menu(options, sizeof(mainOptions) / sizeof(mainOptions[0]) ) {
 		
 	}
 
