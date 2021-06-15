@@ -6,6 +6,7 @@ class MainMenu : public Menu{
 
 public:
 	std::string mainOptions[3] = { "Start Game","Options","Quit" };
+	int optionNum{};
 
 	MainMenu() : Menu(mainOptions, sizeof(mainOptions) / sizeof(mainOptions[0]) ) {
 		

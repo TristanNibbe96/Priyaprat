@@ -3,19 +3,12 @@
 
 class Menu{
 protected:
-    std::string options[4] = {"a","a","a","a"};
-    int numOptions{};
+
 
 public:
-    Menu(std::string options[], int len) {
-        for (int i = 0; i < len; i++) {
-            this->options[i] = options[i];
-        }
-        numOptions = len;
-    }
 
-    void PrintOptions() {
-        for (int i = 0; i < numOptions; i++) {
+    void PrintOptions(std::string options[], int len) {
+        for (int i = 0; i < len; i++) {
             std::cout << i << ") " + options[i] + "\n";
         }
 
