@@ -6,15 +6,15 @@ class MainMenu : public Menu{
 
 public:
 	std::string mainOptions[3] = { "Start Game","Options","Quit" };
-	int optionNum{};
+	int numOptions{};
 
 	MainMenu() {
-		optionNum = sizeof(mainOptions) / sizeof(mainOptions[0]);
+		numOptions = sizeof(mainOptions) / sizeof(mainOptions[0]);
 	}
 
 	void PrintWelcomeMessage() {
 		std::cout << "Welcome to Priyaprat, survive if you can!\n";
-		PrintOptions(mainOptions, optionNum);
+		PrintOptions(mainOptions, numOptions);
 		GetEnteredOption();
 	}
 };
