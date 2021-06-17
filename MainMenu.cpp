@@ -27,7 +27,12 @@ public:
 		switch (currentStage)
 		{
 		case 0:
-
+			GameMenu gameMenu;
+			break;
+		case 1:
+			OptionsMenu optionsMenu;
+			break;
+		case 2:
 			break;
 		default:
 			break;
