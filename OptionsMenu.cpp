@@ -9,7 +9,9 @@ public:
 	int numOptions{};
 
 	OptionsMenu() {
-		numOptions = sizeof(options) / sizeof(options[0]);
+		numOptions = calcNumberOfOptions(options);
+
+
 	}
 
 	void PrintWelcomeMessage() {
