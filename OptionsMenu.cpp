@@ -2,13 +2,13 @@
 #include <string>
 #include "Menu.cpp"
 
-class MainMenu : public Menu{
+class OptionsMenu : public Menu {
 
 public:
 	std::string options[3] = { "Start Game","Options","Quit" };
 	int numOptions{};
 
-	MainMenu() {
+	OptionsMenu() {
 		numOptions = sizeof(options) / sizeof(options[0]);
 	}
 
