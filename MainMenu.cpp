@@ -10,6 +10,9 @@ public:
 
 	MainMenu() {
 		numOptions = sizeof(options) / sizeof(options[0]);
+
+		PrintWelcomeMessage();
+		Game();
 	}
 
 	void PrintWelcomeMessage() {

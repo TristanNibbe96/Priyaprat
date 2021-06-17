@@ -5,7 +5,6 @@
 int main()
 {
     MainMenu mainMenu;
-    mainMenu.PrintWelcomeMessage();
 }
 
 

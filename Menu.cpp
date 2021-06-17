@@ -11,6 +11,10 @@ public:
         }
     }
 
+    int calcNumberOfOptions(std::string options[]) {
+        return sizeof(options) / sizeof(options[0]);
+    }
+
     int GetEnteredOption() {
         std::string rawNumber = "";
         int number{};
