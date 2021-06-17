@@ -9,7 +9,7 @@ public:
 	int numOptions{};
 
 	MainMenu() {
-		numOptions = calcNumberOfOptions();
+		numOptions = calcNumberOfOptions(options);
 
 		PrintWelcomeMessage();
 		Game();
