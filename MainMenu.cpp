@@ -12,7 +12,13 @@ public:
 		PrintWelcomeMessage();
 		Game();
 	}
+	
+	void Start() {
+		PrintWelcomeMessage();
+		Game();
+	}
 
+private:
 	void PrintWelcomeMessage() {
 		std::cout << "Welcome to Priyaprat, survive if you can!\n";
 		Game();

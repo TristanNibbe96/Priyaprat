@@ -5,6 +5,7 @@
 int main()
 {
     MainMenu mainMenu;
+    mainMenu.Start();
 }
 
 

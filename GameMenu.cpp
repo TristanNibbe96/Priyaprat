@@ -10,8 +10,6 @@ public:
 
 	GameMenu() {
 		numOptions = calcNumberOfOptions(options);
-
-
 	}
 
 	void PrintWelcomeMessage() {
