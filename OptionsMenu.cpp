@@ -15,7 +15,7 @@ public:
 	}
 
 	void PrintWelcomeMessage() {
-		std::cout << "Welcome to Priyaprat, survive if you can!\n";
+		std::cout << "Options\n";
 		Game();
 	}
 
