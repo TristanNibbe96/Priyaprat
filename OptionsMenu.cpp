@@ -14,6 +14,7 @@ public:
 
 	}
 
+private:
 	void PrintWelcomeMessage() {
 		std::cout << "Options\n";
 		Game();

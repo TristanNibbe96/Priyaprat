@@ -12,6 +12,8 @@ public:
 		numOptions = calcNumberOfOptions(options);
 	}
 
+
+private:
 	void PrintWelcomeMessage() {
 		std::cout << "Welcome to GameMenu\n";
 		Game();
