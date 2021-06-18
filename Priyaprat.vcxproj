@@ -144,6 +144,9 @@
     <ClCompile Include="OptionsMenu.cpp" />
     <ClCompile Include="Priyaprat.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainMenu.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
