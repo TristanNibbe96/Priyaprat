@@ -1,3 +1,5 @@
+#include <iostream>
+#include <string>
 #include "Menu.cpp"
 
 class GameMenu : public Menu {

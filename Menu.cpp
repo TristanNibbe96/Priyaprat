@@ -1,7 +1,6 @@
-#include <iostream>
-#include <string>
+#include "Menu.h"
 
-class Menu{
+class Menu:: Menu(){
 
 public:
     virtual void Start() = 0;
