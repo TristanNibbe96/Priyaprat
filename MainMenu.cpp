@@ -9,22 +9,22 @@ public:
 	MainMenu() {
 		numOptions = calcNumberOfOptions(options);
 
-		PrintWelcomeMessage();
-		Game();
+		OpeningMessage();
+		InputLoop();
 	}
 	
 	void Start() {
-		PrintWelcomeMessage();
-		Game();
+		OpeningMessage();
+		InputLoop();
 	}
 
 private:
-	void PrintWelcomeMessage() {
+	void OpeningMessage() {
 		std::cout << "Welcome to Priyaprat, survive if you can!\n";
-		Game();
+		InputLoop();
 	}
 
-	void Game() {
+	void InputLoop() {
 		PrintOptions(options, numOptions);
 		GameMenu gameMenu;
 		OptionsMenu optionsMenu;

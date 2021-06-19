@@ -17,12 +17,12 @@ public:
 	}
 
 private:
-	void PrintWelcomeMessage() {
+	void OpeningMessage() {
 		std::cout << "Options\n";
-		Game();
+		InputLoop();
 	}
 
-	void Game() {
+	void InputLoop() {
 		PrintOptions(options, numOptions);
 		int currentStage = GetEnteredOption();
 
