@@ -1,4 +1,9 @@
-#include "MainMenu.h"
+#include <iostream>
+#include <string>
+
+#include "Menu.cpp"
+//#include "GameMenu.cpp"
+//#include "OptionsMenu.cpp"
 
 class MainMenu : public Menu{
 
@@ -26,17 +31,17 @@ private:
 
 	void InputLoop() {
 		PrintOptions(options, numOptions);
-		GameMenu gameMenu;
-		OptionsMenu optionsMenu;
+		//GameMenu gameMenu;
+		//OptionsMenu optionsMenu;
 		int currentStage = GetEnteredOption();
 
 		switch (currentStage)
 		{
 		case 0:
-			gameMenu.Start();
+			//gameMenu.Start();
 			break;
 		case 1:
-			optionsMenu.Start();
+			//optionsMenu.Start();
 			break;
 		case 2:
 			break;
