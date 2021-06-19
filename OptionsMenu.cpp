@@ -10,8 +10,6 @@ public:
 
 	OptionsMenu() {
 		numOptions = calcNumberOfOptions(options);
-
-
 	}
 
 private:

@@ -26,15 +26,17 @@ private:
 
 	void Game() {
 		PrintOptions(options, numOptions);
+		GameMenu gameMenu;
+		OptionsMenu optionsMenu;
 		int currentStage = GetEnteredOption();
 
 		switch (currentStage)
 		{
 		case 0:
-			GameMenu gameMenu;
+			gameMenu.Start();
 			break;
 		case 1:
-			OptionsMenu optionsMenu;
+			optionsMenu.Start();
 			break;
 		case 2:
 			break;
