@@ -12,6 +12,10 @@ public:
 		numOptions = calcNumberOfOptions(options);
 	}
 
+	void Start() {
+
+	}
+
 private:
 	void PrintWelcomeMessage() {
 		std::cout << "Options\n";

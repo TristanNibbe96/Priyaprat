@@ -1,5 +1,3 @@
-#include <iostream>
-#include <string>
 #include "Menu.cpp"
 
 class GameMenu : public Menu {
@@ -10,6 +8,10 @@ public:
 
 	GameMenu() {
 		numOptions = calcNumberOfOptions(options);
+	}
+
+	void Start() {
+
 	}
 
 
