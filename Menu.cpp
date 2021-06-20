@@ -1,12 +1,9 @@
-#include <iostream>
-#include <string>
+#include <Menu.h>
 
 class Menu{
 
 public:
-    virtual void Start() {};
-    virtual void OpeningMessage() {};
-    virtual void InputLoop() {};
+
 
     void PrintOptions(std::string options[], int len) {
         for (int i = 0; i < len; i++) {
