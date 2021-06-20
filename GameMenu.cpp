@@ -1,4 +1,3 @@
-
 #include "Menu.h"
 
 class GameMenu : public Menu {

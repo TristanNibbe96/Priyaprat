@@ -3,8 +3,6 @@
 class Menu{
 
 public:
-
-
     void PrintOptions(std::string options[], int len) {
         for (int i = 0; i < len; i++) {
             std::cout << i << ") " + options[i] + "\n";
