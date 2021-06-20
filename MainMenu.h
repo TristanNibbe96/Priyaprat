@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-#include "Menu.cpp"
+#include "Menu.h"
 #include "GameMenu.cpp"
 #include "OptionsMenu.cpp"
 
