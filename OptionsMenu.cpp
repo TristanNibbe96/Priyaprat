@@ -10,17 +10,17 @@ public:
 		numOptions = calcNumberOfOptions(options);
 	}
 
-	void Start() {
+	void Menu::Start() {
 
 	}
 
 private:
-	void OpeningMessage() {
+	void Menu::OpeningMessage() {
 		std::cout << "Options\n";
 		InputLoop();
 	}
 
-	void InputLoop() {
+	void Menu::InputLoop() {
 		PrintOptions(options, numOptions);
 		int currentStage = GetEnteredOption();
 

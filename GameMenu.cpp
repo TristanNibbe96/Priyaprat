@@ -16,12 +16,12 @@ public:
 
 
 private:
-	void OpeningMessage() {
+	void Menu::OpeningMessage() {
 		std::cout << "Welcome to GameMenu\n";
 		InputLoop();
 	}
 
-	void InputLoop() {
+	void Menu::InputLoop() {
 		PrintOptions(options, numOptions);
 		int currentStage = GetEnteredOption();
 

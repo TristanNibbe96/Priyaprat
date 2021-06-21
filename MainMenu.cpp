@@ -13,18 +13,18 @@ public:
 		InputLoop();
 	}
 	
-	void Start() {
+	void Menu::Start() {
 		OpeningMessage();
 		InputLoop();
 	}
 
 private:
-	void OpeningMessage() {
+	void Menu::OpeningMessage() {
 		std::cout << "Welcome to Priyaprat, survive if you can!\n";
 		InputLoop();
 	}
 
-	void InputLoop() {
+	void Menu::InputLoop() {
 		PrintOptions(options, numOptions);
 		GameMenu gameMenu;
 		OptionsMenu optionsMenu;
