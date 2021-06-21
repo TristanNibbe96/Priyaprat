@@ -11,7 +11,8 @@ public:
 	}
 
 	void Menu::Start() {
-
+		OpeningMessage();
+		InputLoop();
 	}
 
 private:
