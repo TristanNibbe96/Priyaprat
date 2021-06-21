@@ -1,19 +1,16 @@
 #include "Menu.h"
 
-class Menu{
-
-public:
-    void PrintOptions(std::string options[], int len) {
+    void Menu::PrintOptions(std::string options[], int len) {
         for (int i = 0; i < len; i++) {
             std::cout << i << ") " + options[i] + "\n";
         }
     }
 
-    int calcNumberOfOptions(std::string options[]) {
+    int Menu::calcNumberOfOptions(std::string options[]) {
         return sizeof(options) / sizeof(options[0]);
     }
 
-    int GetEnteredOption() {
+    int Menu::GetEnteredOption() {
         std::string rawNumber = "";
         int number{};
 
@@ -31,4 +28,3 @@ public:
 
 
 
-};

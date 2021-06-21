@@ -12,4 +12,5 @@ public:
     void PrintOptions(std::string options[], int len);
     int calcNumberOfOptions(std::string options[]);
     int GetEnteredOption();
+    Menu();
 };
