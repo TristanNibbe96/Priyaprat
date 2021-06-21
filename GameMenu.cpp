@@ -1,3 +1,4 @@
+
 #include "Menu.h"
 
 class GameMenu : public Menu {
@@ -10,9 +11,7 @@ public:
 		numOptions = calcNumberOfOptions(options);
 	}
 
-	void Start() {
 
-	}
 
 
 private:

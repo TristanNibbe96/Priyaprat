@@ -5,7 +5,7 @@
 class Menu {
 
 public:
-    virtual void Start() {};
+    virtual void Start();
     virtual void OpeningMessage() {};
     virtual void InputLoop() {};
 
