@@ -3,7 +3,6 @@
 class OptionsMenu : public Menu {
 
 public:
-	std::string options[3] = { "Start Game","Options","Quit" };
 	int numOptions{};
 
 	OptionsMenu() {
@@ -16,6 +15,8 @@ public:
 	}
 
 private:
+	std::string options[3] = { "Start Game","Options","Quit" };
+
 	void Menu::OpeningMessage() {
 		std::cout << "Options\n";
 		InputLoop();

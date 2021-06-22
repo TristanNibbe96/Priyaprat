@@ -4,6 +4,8 @@
         for (int i = 0; i < len; i++) {
             std::cout << i << ") " + options[i] + "\n";
         }
+
+        std::cout << std::endl;
     }
 
     int Menu::calcNumberOfOptions(std::string options[]) {
