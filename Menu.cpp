@@ -1,15 +1,11 @@
 #include "Menu.h"
 
-    void Menu::PrintOptions(std::string options[], int len) {
+    void Menu::PrintOptions(std::array<std::string> options) {
         for (int i = 0; i < len; i++) {
             std::cout << i << ") " + options[i] + "\n";
         }
 
         std::cout << std::endl;
-    }
-
-    int Menu::calcNumberOfOptions(std::string options[]) {
-        return sizeof(options) / sizeof(options[0]);
     }
 
     int Menu::GetEnteredOption() {

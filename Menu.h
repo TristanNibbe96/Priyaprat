@@ -1,14 +1,14 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <array>
 
 class Menu {
 
 public:
     virtual void Start() = 0;
 
-    void PrintOptions(std::string options[], int len);
-    int calcNumberOfOptions(std::string options[]);
+    void PrintOptions(std::array<> options);
     int GetEnteredOption();
     Menu() {};
 

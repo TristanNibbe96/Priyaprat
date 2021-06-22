@@ -1,4 +1,5 @@
 #include "Menu.h"
+#include <array>
 
 class OptionsMenu : public Menu {
 
@@ -15,7 +16,7 @@ public:
 	}
 
 private:
-	std::string options[3] = { "Start Game","Options","Quit" };
+	std::array<std::string, 3> options = { "Start Game","Options","Quit" };
 
 	void Menu::OpeningMessage() {
 		std::cout << "Options\n";

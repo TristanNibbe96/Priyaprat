@@ -3,11 +3,8 @@
 class MainMenu : public Menu{
 
 public:
-	int numOptions{};
 
 	MainMenu() {
-		numOptions = calcNumberOfOptions(options);
-
 		OpeningMessage();
 		InputLoop();
 	}
@@ -18,7 +15,7 @@ public:
 	}
 
 private:
-	std::string options[3] = { "Start Game","Options","Quit" };
+	std::array<std::string, 3> options = { "Start Game","Options","Quit" };
 
 	void Menu::OpeningMessage() {
 		std::cout << "Welcome to Priyaprat, survive if you can!\n";
@@ -26,7 +23,8 @@ private:
 	}
 
 	void Menu::InputLoop() {
-		PrintOptions(options, numOptions);
+		options.[];
+		PrintOptions(options);
 		GameMenu gameMenu;
 		OptionsMenu optionsMenu;
 		int currentStage = GetEnteredOption();
