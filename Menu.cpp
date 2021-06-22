@@ -1,6 +1,6 @@
 #include "Menu.h"
 
-    void Menu::PrintOptions(std::array<std::string> options) {
+    void Menu::PrintOptions() {
         for (int i = 0; i < len; i++) {
             std::cout << i << ") " + options[i] + "\n";
         }

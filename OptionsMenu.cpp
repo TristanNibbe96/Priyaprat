@@ -16,7 +16,7 @@ public:
 	}
 
 private:
-	std::array<std::string, 3> options = { "Start Game","Options","Quit" };
+	std::string options[3] = { "Start Game","Options","Quit" };
 
 	void Menu::OpeningMessage() {
 		std::cout << "Options\n";
