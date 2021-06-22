@@ -5,8 +5,7 @@ class MainMenu : public Menu{
 public:
 
 	MainMenu() {
-		OpeningMessage();
-		InputLoop();
+		SetOptions(options);
 	}
 	
 	void Menu::Start() {
@@ -23,8 +22,7 @@ private:
 	}
 
 	void Menu::InputLoop() {
-		options.[];
-		PrintOptions(options);
+		PrintOptions();
 		GameMenu gameMenu;
 		OptionsMenu optionsMenu;
 		int currentStage = GetEnteredOption();

@@ -4,10 +4,10 @@
 class OptionsMenu : public Menu {
 
 public:
-	int numOptions{};
+	std::string options[3] = { "Start Game","Options","Quit" };
 
 	OptionsMenu() {
-		numOptions = calcNumberOfOptions(options);
+		SetOptions(options);
 	}
 
 	void Menu::Start() {
@@ -16,15 +16,13 @@ public:
 	}
 
 private:
-	std::string options[3] = { "Start Game","Options","Quit" };
-
 	void Menu::OpeningMessage() {
 		std::cout << "Options\n";
 		InputLoop();
 	}
 
 	void Menu::InputLoop() {
-		PrintOptions(options, numOptions);
+		PrintOptions();
 		int currentStage = GetEnteredOption();
 
 		switch (currentStage)

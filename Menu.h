@@ -6,11 +6,10 @@ class Menu {
 
 public:
     virtual void Start() = 0;
+    void SetOptions(std::string newOptions[]);
     void PrintOptions();
     int GetEnteredOption();
-    Menu() {
-        
-    };
+    Menu() {};
 
 private:
     std::string options[9] = {};
