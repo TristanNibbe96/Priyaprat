@@ -8,7 +8,7 @@
         std::cout << std::endl;
     }
 
-    void Menu::SetOptions(std::string newOptions[]) {
+    void Menu::SetOptions(std::string newOptions[], std::string end) {
         //TODO
     }
 

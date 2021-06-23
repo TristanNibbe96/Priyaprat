@@ -6,7 +6,7 @@ public:
 	std::string options[3] = { "Start Game","Options","Quit" };
 
 	GameMenu() {
-		SetOptions(options);
+		SetOptions(options, options[3]);
 	}
 
 	void Menu::Start() {
