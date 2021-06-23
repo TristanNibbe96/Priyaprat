@@ -8,8 +8,8 @@ private:
 
 public:
 	MenuOption(std::string s, Menu::ScreenType screen) {
-		text = s;
-		screenToOpen = screen;
+		SetText(s);
+		SetScreen(screen);
 	}
 
 	void SetText(std::string s) {
