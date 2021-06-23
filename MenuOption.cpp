@@ -12,12 +12,12 @@ public:
 		screenToOpen = screen;
 	}
 
-	void SetText() {
-
+	void SetText(std::string s) {
+		text = s;
 	}
 
-	void SetScreen() {
-
+	void SetScreen(Menu::ScreenType screen) {
+		screenToOpen = screen;
 	}
 
 	std::string GetText() {
