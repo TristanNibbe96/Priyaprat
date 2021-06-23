@@ -21,11 +21,11 @@ public:
 	}
 
 	std::string GetText() {
-
+		return text;
 	}
 
 	Menu::ScreenType GetScreen() {
-
+		return screenToOpen
 	}
 
 
