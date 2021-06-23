@@ -1,5 +1,4 @@
 #include "Menu.h"
-#include <array>
 
 class GameMenu : public Menu {
 

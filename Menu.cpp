@@ -8,6 +8,10 @@
         std::cout << std::endl;
     }
 
+    void Menu::SetOptions(std::string newOptions[]) {
+        //TODO
+    }
+
     int Menu::GetEnteredOption() {
         std::string rawNumber = "";
         int number{};
