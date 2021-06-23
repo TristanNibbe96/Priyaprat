@@ -13,7 +13,7 @@
         while (newOptions[i] != TERM) {
             options[i] = newOptions[i];
             i++;
-        }
+        } 
 
         numOptions = i;
     }
