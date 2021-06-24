@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "MenuOption.cpp"
+#include "MenuOption.h"
 
 class Menu {
 
