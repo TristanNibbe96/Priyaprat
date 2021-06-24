@@ -5,7 +5,7 @@
 class Menu {
 
 public:
-    enum ScreenType {Main, Game, Options};
+    enum ScreenType {Main, Game, Options,};
 
     virtual void Start() = 0;
     void SetOptions(std::string newOptions[]);
