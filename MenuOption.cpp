@@ -1,13 +1,12 @@
-#include <string>
-#include "Menu.h"
+#include "MenuOption.h"
 
 class MenuOption {
 private:
 	std::string text;
-	Menu::ScreenType screenToOpen;
+	ScreenType screenToOpen;
 
 public:
-	MenuOption(std::string s, Menu::ScreenType screen) {
+	MenuOption(std::string s, ScreenType screen) {
 		SetText(s);
 		SetScreen(screen);
 	}
@@ -16,7 +15,7 @@ public:
 		text = s;
 	}
 
-	void SetScreen(Menu::ScreenType screen) {
+	void SetScreen(ScreenType screen) {
 		screenToOpen = screen;
 	}
 
@@ -24,7 +23,7 @@ public:
 		return text;
 	}
 
-	Menu::ScreenType GetScreen() {
+	ScreenType GetScreen() {
 		return screenToOpen
 	}
 

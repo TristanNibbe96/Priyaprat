@@ -41,5 +41,8 @@
     <ClInclude Include="Menu.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="MenuOption.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
