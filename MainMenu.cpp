@@ -3,7 +3,7 @@
 class MainMenu : public Menu{
 
 public:
-	std::string options[4] = { "Start Game","Options","Quit", TERM };
+	MenuOption options[4] = {MenuOption()};
 
 	MainMenu() {
 		SetOptions(options);
