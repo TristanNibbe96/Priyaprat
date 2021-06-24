@@ -8,8 +8,13 @@
         std::cout << std::endl;
     }
 
-    void Menu::SetOptions(std::string newOptions[], std::string end) {
-        //TODO
+    void Menu::SetOptions(std::string newOptions[]) {
+        int i = 0;
+        while (newOptions[i] != TERM) {
+            options[i] = newOptions[i];
+        }
+
+        numOptions = i;
     }
 
     int Menu::GetEnteredOption() {
