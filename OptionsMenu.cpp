@@ -3,7 +3,7 @@
 class OptionsMenu : public Menu {
 
 public:
-	std::string options[3] = {"Option1","Return to Menu", TERM};
+	MenuOption options[3] = {MenuOption(), MenuOption()};
 
 	OptionsMenu() {
 		SetOptions(options);

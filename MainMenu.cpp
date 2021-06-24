@@ -3,7 +3,7 @@
 class MainMenu : public Menu{
 
 public:
-	MenuOption options[4] = {MenuOption()};
+	MenuOption options[1] = {MenuOption()};
 
 	MainMenu() {
 		SetOptions(options);

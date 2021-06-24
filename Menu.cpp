@@ -18,7 +18,7 @@
         numOptions = i;
     }
 
-    Menu::ScreenType Menu::GetEnteredOption() {
+    MenuOption::ScreenType Menu::GetEnteredOption() {
         std::string rawNumber = "";
         int number = 100;
 
