@@ -18,7 +18,7 @@
         numOptions = i;
     }
 
-    int Menu::GetEnteredOption() {
+    ScreenType Menu::GetEnteredOption() {
         std::string rawNumber = "";
         int number{};
 
@@ -31,7 +31,10 @@
         }
 
         number = std::stoi(rawNumber, NULL, 10);
-        return number;
+
+
+
+        return (ScreenType) number;
     }
 
 

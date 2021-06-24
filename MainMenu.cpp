@@ -24,7 +24,7 @@ private:
 		PrintOptions();
 		GameMenu gameMenu;
 		OptionsMenu optionsMenu;
-		int currentStage = GetEnteredOption();
+		ScreenType currentStage = (ScreenType) GetEnteredOption();
 
 		switch (currentStage)
 		{

@@ -5,12 +5,16 @@
 class Menu {
 
 public:
+    enum ScreenType {Main, Game, Options};
+
     virtual void Start() = 0;
     void SetOptions(std::string newOptions[]);
     void PrintOptions();
-    int GetEnteredOption();
+    ScreenType GetEnteredOption();
     Menu() {};
+
     std::string TERM = "\0";
+
 
 private:
     std::string options[9] = {};
