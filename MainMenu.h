@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-#include "MenuOption.cpp"
+#include "MenuOption.h"
 #include "Menu.h"
 
 

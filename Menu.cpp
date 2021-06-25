@@ -10,7 +10,7 @@
 
     void Menu::SetOptions(MenuOption newOptions[]) {
         int i = 0;
-        while (newOptions[i] != TERM) {
+        while (newOptions[i].Equals(TERM)) {
             options[i] = newOptions[i];
             i++;
         } 

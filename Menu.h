@@ -11,8 +11,7 @@ public:
     void PrintOptions();
     ScreenType GetEnteredOption();
     Menu() {};
-
-    std::string TERM = "\0";
+    MenuOption TERM = MenuOption("TERM", END);
 
 
 private:

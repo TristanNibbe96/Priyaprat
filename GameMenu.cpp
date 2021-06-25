@@ -3,7 +3,7 @@
 class GameMenu : public Menu {
 
 public:
-	MenuOption options[2] = { MenuOption(), MenuOption()};
+	MenuOption options[2] = { MenuOption("one", MenuOption::Game), MenuOption("two", MenuOption::Main)};
 
 	GameMenu() {
 		SetOptions(options);
