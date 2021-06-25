@@ -11,5 +11,6 @@ public:
 	void SetScreen(ScreenType screen);
 	std::string GetText();
 	ScreenType GetScreen();
+	bool Equals(MenuOption* other);
 };
 
