@@ -9,9 +9,9 @@ public:
     virtual void Start() = 0;
     void SetOptions(MenuOption newOptions[]);
     void PrintOptions();
-    ScreenType GetEnteredOption();
+    MenuOption::ScreenType GetEnteredOption();
     Menu() {};
-    MenuOption TERM = MenuOption("TERM", END);
+    MenuOption TERM = MenuOption("TERM", MenuOption::END);
 
 
 private:
