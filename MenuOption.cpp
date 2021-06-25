@@ -24,7 +24,11 @@ public:
 	}
 
 	ScreenType GetScreen() {
-		return screenToOpen
+		return screenToOpen;
+	}
+
+	bool Equals(MenuOption *other) {
+		return (other->GetText() == this->GetText() && other->GetScreen() == this->GetScreen());
 	}
 
 
