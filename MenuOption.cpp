@@ -1,6 +1,6 @@
 #include "MenuOption.h"
 
-class MenuOption {
+class MenuOption::MenuOption {
 private:
 	std::string text;
 	ScreenType screenToOpen;
