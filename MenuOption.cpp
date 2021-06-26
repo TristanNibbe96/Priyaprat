@@ -17,7 +17,7 @@ std::string MenuOption::GetText() {
 	return text;
 }
 
-MenuOption::ScreenType MenuOption::MenuOption::GetScreen() {
+MenuOption::ScreenType MenuOption::GetScreen() {
 	return screenToOpen;
 }
 
