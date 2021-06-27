@@ -1,8 +1,21 @@
 #include "MenuOption.h"
 
+
+MenuOption::MenuOption() {
+	SetText("");
+	SetScreen(MISC);
+}
+
 MenuOption::MenuOption(std::string s, MenuOption::ScreenType screen) {
 	SetText(s);
 	SetScreen(screen);
+}
+
+MenuOption MenuOption::Copy(MenuOption toFill) {
+	toFill.SetText(GetText());
+	toFill.SetScreen(GetScreen());
+
+	return toFill;
 }
 
 void MenuOption::SetText(std::string s) {

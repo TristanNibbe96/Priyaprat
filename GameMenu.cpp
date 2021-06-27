@@ -3,7 +3,9 @@
 class GameMenu : public Menu {
 
 public:
-	MenuOption options[2] = { MenuOption("one", MenuOption::Game), MenuOption("two", MenuOption::Main)};
+	MenuOption options[3] = { MenuOption("one", MenuOption::Game),
+							  MenuOption("two", MenuOption::Main),
+							  TERM.Copy(MenuOption()) };
 
 	GameMenu() {
 		SetOptions(options);
