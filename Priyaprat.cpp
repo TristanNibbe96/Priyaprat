@@ -7,7 +7,7 @@ class Priyaprat {
     MenuOption::ScreenType currentScreen;
 
     Priyaprat() {
-        currentScreen = MenuOption::Main;
+        setCurrentScreen(MenuOption::Main);
     }
 
 public:
@@ -23,7 +23,17 @@ public:
 
     void setCurrentScreen(MenuOption::ScreenType newScreen) {
         this->currentScreen = newScreen;
+        GameLoop();
     }
+
+private:
+    void GameLoop() {
+        switch (currentScreen) {
+        case(MenuOption::Main):
+            MainMenu().Start();
+        }
+    }
+
 };
 
 
