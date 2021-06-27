@@ -11,11 +11,12 @@ public:
     void PrintOptions();
     MenuOption::ScreenType GetEnteredOption();
     Menu() {};
-    MenuOption TERM = MenuOption("TERM", MenuOption::END);
+    MenuOption TERM = (MenuOption("TERM", MenuOption::END));
 
 
 protected:
     MenuOption options[2] = { MenuOption("one", MenuOption::Game), MenuOption("two", MenuOption::Main) };
     int numOptions{};
     virtual void OpeningMessage() = 0;
+
 };

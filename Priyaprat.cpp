@@ -1,13 +1,6 @@
-#include <iostream>
 #include <string>
-#include "Menu.h"
 #include "MainMenu.cpp"
 #include "MenuOption.h"
-
-int main()
-{
-    Priyaprat* game = game->getInstance();
-}
 
 class Priyaprat {
     static Priyaprat* instance;
