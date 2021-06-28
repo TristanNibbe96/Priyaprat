@@ -1,6 +1,8 @@
 #include <string>
 #include "MainMenu.cpp"
 #include "MenuOption.h"
+#include "GameMenu.cpp"
+#include "OptionsMenu.cpp"
 
 class Priyaprat {
     static Priyaprat* instance;
@@ -39,11 +41,11 @@ private:
                 break;
 
             case(MenuOption::Game):
-                MainMenu().Start();
+                GameMenu().Start();
                 break;
 
             case(MenuOption::Options):
-                MainMenu().Start();
+                OptionsMenu().Start();
                 break;
 
             case(MenuOption::Quit):
