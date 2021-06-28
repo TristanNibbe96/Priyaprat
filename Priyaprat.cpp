@@ -17,20 +17,38 @@ public:
         return instance;
     }
 
+    void Start() {
+        GameLoop();
+    }
+
     int getCurrentScreen() {
         return this->currentScreen;
     }
 
     void setCurrentScreen(MenuOption::ScreenType newScreen) {
         this->currentScreen = newScreen;
-        GameLoop();
     }
 
 private:
     void GameLoop() {
-        switch (currentScreen) {
-        case(MenuOption::Main):
-            MainMenu().Start();
+        while (true) {
+            switch (currentScreen) {
+
+            case(MenuOption::Main):
+                MainMenu().Start();
+                break;
+
+            case(MenuOption::Game):
+                MainMenu().Start();
+                break;
+
+            case(MenuOption::Options):
+                MainMenu().Start();
+                break;
+
+            case(MenuOption::Quit):
+                return;
+            }
         }
     }
 

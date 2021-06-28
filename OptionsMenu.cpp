@@ -3,8 +3,8 @@
 class OptionsMenu : public Menu {
 
 public:
-	MenuOption options[3] = { MenuOption("one", MenuOption::Game),
-							  MenuOption("two", MenuOption::Main),
+	MenuOption options[3] = { MenuOption("Game", MenuOption::Game),
+							  MenuOption("Main", MenuOption::Main),
 							  TERM.Copy(MenuOption()) };
 
 	OptionsMenu() {

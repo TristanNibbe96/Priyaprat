@@ -4,7 +4,7 @@
 class MenuOption {
 
 public:
-	enum ScreenType { Main, Game, Options,MISC , END };
+	enum ScreenType { Main, Game, Options,Quit, MISC , END };
 
 	MenuOption();
 	MenuOption(std::string s, ScreenType screen);

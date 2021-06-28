@@ -6,4 +6,5 @@ int main()
 {
     Priyaprat* game;
     game->getInstance();
+    game->Start();
 }
