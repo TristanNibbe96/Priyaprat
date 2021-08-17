@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "Menu.h"
 #include "MainMenu.cpp"
 
 int main()
@@ -8,28 +9,27 @@ int main()
     mainMenu.Start();
 }
 
-class Singleton {
-    static Singleton* instance;
-    int data;
+class Priyaprat {
+    static Priyaprat* instance;
+    Menu::ScreenType currentScreen;
 
-    // Private constructor so that no objects can be created.
-    Singleton() {
-        data = 0;
+    Priyaprat() {
+        currentScreen = Menu::Main;
     }
 
 public:
-    static Singleton* getInstance() {
+    static Priyaprat* getInstance() {
         if (!instance)
-            instance = new Singleton;
+            instance = new Priyaprat;
         return instance;
     }
 
-    int getData() {
-        return this->data;
+    int getCurrentScreen() {
+        return this->currentScreen;
     }
 
-    void setData(int data) {
-        this->data = data;
+    void setCurrentScreen(Menu::ScreenType newScreen) {
+        this->currentScreen = newScreen;
     }
 };
 
