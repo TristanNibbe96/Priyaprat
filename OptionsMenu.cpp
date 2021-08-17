@@ -11,26 +11,13 @@ public:
 
 	void Menu::Start() {
 		OpeningMessage();
-		InputLoop();
+		PrintOptions();
+		GetEnteredOption();
 	}
 
 private:
 	void Menu::OpeningMessage() {
-		std::cout << "Options\n";
-		InputLoop();
+		std::cout << "\nOptions\n";
 	}
 
-	void Menu::InputLoop() {
-		PrintOptions();
-		int currentStage = GetEnteredOption();
-
-		switch (currentStage)
-		{
-		case 0:
-
-			break;
-		default:
-			break;
-		}
-	}
 };
