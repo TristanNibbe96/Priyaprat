@@ -5,8 +5,7 @@
 
 int main()
 {
-    MainMenu mainMenu;
-    mainMenu.Start();
+    Priyaprat* game = game->getInstance();
 }
 
 class Priyaprat {
