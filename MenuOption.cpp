@@ -1,35 +1,27 @@
 #include "MenuOption.h"
 
-class MenuOption::MenuOption {
-private:
-	std::string text;
-	ScreenType screenToOpen;
+MenuOption::MenuOption(std::string s, MenuOption::ScreenType screen) {
+	SetText(s);
+	SetScreen(screen);
+}
 
-public:
-	MenuOption(std::string s, ScreenType screen) {
-		SetText(s);
-		SetScreen(screen);
-	}
+void MenuOption::SetText(std::string s) {
+	text = s;
+}
 
-	void SetText(std::string s) {
-		text = s;
-	}
+void MenuOption::SetScreen(MenuOption::ScreenType screen) {
+	screenToOpen = screen;
+}
 
-	void SetScreen(ScreenType screen) {
-		screenToOpen = screen;
-	}
+std::string MenuOption::GetText() {
+	return text;
+}
 
-	std::string GetText() {
-		return text;
-	}
+MenuOption::ScreenType MenuOption::MenuOption::GetScreen() {
+	return screenToOpen;
+}
 
-	ScreenType GetScreen() {
-		return screenToOpen;
-	}
+bool MenuOption::Equals(MenuOption *other) {
+	return (other->GetText() == this->GetText() && other->GetScreen() == this->GetScreen());
+}
 
-	bool Equals(MenuOption *other) {
-		return (other->GetText() == this->GetText() && other->GetScreen() == this->GetScreen());
-	}
-
-
-};

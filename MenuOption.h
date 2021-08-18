@@ -2,6 +2,7 @@
 #include <string>
 
 
+
 class MenuOption {
 
 public:
@@ -14,5 +15,9 @@ public:
 	ScreenType GetScreen();
 	bool Equals(MenuOption* other);
 
+private:
+	std::string text;
+	ScreenType screenToOpen;
 };
+
 

@@ -2,6 +2,7 @@
 #include <string>
 #include "Menu.h"
 #include "MainMenu.cpp"
+#include "MenuOption.h"
 
 int main()
 {
@@ -10,10 +11,10 @@ int main()
 
 class Priyaprat {
     static Priyaprat* instance;
-    Menu::ScreenType currentScreen;
+    MenuOption::ScreenType currentScreen;
 
     Priyaprat() {
-        currentScreen = Menu::Main;
+        currentScreen = MenuOption::Main;
     }
 
 public:
@@ -27,7 +28,7 @@ public:
         return this->currentScreen;
     }
 
-    void setCurrentScreen(Menu::ScreenType newScreen) {
+    void setCurrentScreen(MenuOption::ScreenType newScreen) {
         this->currentScreen = newScreen;
     }
 };

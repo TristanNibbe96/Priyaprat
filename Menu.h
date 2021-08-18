@@ -14,8 +14,8 @@ public:
     MenuOption TERM = MenuOption("TERM", MenuOption::END);
 
 
-private:
-    std::string options[9] = {};
+protected:
+    MenuOption options[2] = { MenuOption("one", MenuOption::Game), MenuOption("two", MenuOption::Main) };
     int numOptions{};
     virtual void OpeningMessage() = 0;
 };

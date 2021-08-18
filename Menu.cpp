@@ -1,7 +1,6 @@
 #include "Menu.h"
 
-class Menu::Menu {
-    void PrintOptions() {
+    void Menu::PrintOptions() {
         for (int i = 0; i < numOptions; i++) {
             std::cout << i << ") " + options[i] + "\n";
         }
@@ -9,9 +8,9 @@ class Menu::Menu {
         std::cout << std::endl;
     }
 
-    void SetOptions(MenuOption newOptions[]) {
+    void Menu::SetOptions(MenuOption newOptions[]) {
         int i = 0;
-        while (newOptions[i].Equals(TERM)) {
+        while (newOptions[i].Equals( (Menu::TERM)* )) {
             options[i] = newOptions[i];
             i++;
         }
@@ -26,7 +25,7 @@ class Menu::Menu {
         std::cout << "Enter: ";
         std::getline(std::cin, rawNumber);
 
-        while (number >= numOptions) {
+        while (number >= Menu::numOptions) {
             while (rawNumber.length() != 1 || !isdigit(rawNumber[0])) {
                 std::cout << "Please enter a valid option: ";
                 std::getline(std::cin, rawNumber);
@@ -38,7 +37,6 @@ class Menu::Menu {
         //TODO implement lookup system to change from local option to global enum option
         return (MenuOption::ScreenType) number;
     }
-};
 
 
 
